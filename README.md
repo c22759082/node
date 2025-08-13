@@ -1,163 +1,163 @@
-# Node.js Project
+# Node.js Projekt
 
-A modern Node.js application template with best practices and comprehensive setup.
+Eine moderne Node.js Anwendungsvorlage mit bewährten Praktiken und umfassendem Setup.
 
-## Features
+## Funktionen
 
-- Modern JavaScript/TypeScript support
-- Comprehensive development environment
-- Clean project structure
-- Extensible and maintainable codebase
+- Moderne JavaScript/TypeScript Unterstützung
+- Umfassende Entwicklungsumgebung
+- Saubere Projektstruktur
+- Erweiterbare und wartbare Codebasis
 
-## Prerequisites
+## Voraussetzungen
 
-Before you begin, ensure you have the following installed:
+Bevor Sie beginnen, stellen Sie sicher, dass Sie Folgendes installiert haben:
 
-- [Node.js](https://nodejs.org/) (version 16.x or higher)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
+- [Node.js](https://nodejs.org/) (Version 16.x oder höher)
+- [npm](https://www.npmjs.com/) (wird mit Node.js mitgeliefert)
 
 ## Installation
 
-1. Clone the repository:
+1. Repository klonen:
    ```bash
    git clone <repository-url>
    cd node
    ```
 
-2. Install dependencies:
+2. Abhängigkeiten installieren:
    ```bash
    npm install
    ```
 
-## Usage
+## Verwendung
 
-### Development
+### Entwicklung
 
-To start the development server:
+Den Entwicklungsserver starten:
 
 ```bash
 npm run dev
 ```
 
-### Production
+### Produktion
 
-To build and run the production version:
+Die Produktionsversion erstellen und ausführen:
 
 ```bash
 npm run build
 npm start
 ```
 
-### Testing
+### Tests
 
-Run the test suite:
+Die Testsuite ausführen:
 
 ```bash
 npm test
 ```
 
-Run tests in watch mode:
+Tests im Watch-Modus ausführen:
 
 ```bash
 npm run test:watch
 ```
 
-## Project Structure
+## Projektstruktur
 
 ```
-├── src/              # Source code
-├── tests/            # Test files
-├── docs/             # Documentation
-├── scripts/          # Build and utility scripts
-├── package.json      # Project configuration
-└── README.md         # This file
+├── src/              # Quellcode
+├── tests/            # Testdateien
+├── docs/             # Dokumentation
+├── scripts/          # Build- und Hilfsskripte
+├── package.json      # Projektkonfiguration
+└── README.md         # Diese Datei
 ```
 
-## Scripts
+## Skripte
 
-- `npm start` - Start the production server
-- `npm run dev` - Start the development server with hot reload
-- `npm run build` - Build the project for production
-- `npm test` - Run tests
-- `npm run test:watch` - Run tests in watch mode
-- `npm run lint` - Run linter
-- `npm run format` - Format code
+- `npm start` - Produktionsserver starten
+- `npm run dev` - Entwicklungsserver mit Hot Reload starten
+- `npm run build` - Projekt für Produktion erstellen
+- `npm test` - Tests ausführen
+- `npm run test:watch` - Tests im Watch-Modus ausführen
+- `npm run lint` - Linter ausführen
+- `npm run format` - Code formatieren
 
-## Environment Variables
+## Umgebungsvariablen
 
-Create a `.env` file in the root directory and add your environment-specific variables:
+Erstellen Sie eine `.env` Datei im Hauptverzeichnis und fügen Sie Ihre umgebungsspezifischen Variablen hinzu:
 
 ```env
 NODE_ENV=development
 PORT=3000
 ```
 
-## Contributing
+## Mitwirken
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Repository forken
+2. Feature-Branch erstellen (`git checkout -b feature/amazing-feature`)
+3. Änderungen committen (`git commit -m 'Add some amazing feature'`)
+4. Zum Branch pushen (`git push origin feature/amazing-feature`)
+5. Pull Request öffnen
 
-### Development Guidelines
+### Entwicklungsrichtlinien
 
-- Follow the existing code style
-- Write tests for new features
-- Update documentation as needed
-- Ensure all tests pass before submitting
+- Den bestehenden Code-Stil befolgen
+- Tests für neue Funktionen schreiben
+- Dokumentation bei Bedarf aktualisieren
+- Sicherstellen, dass alle Tests bestehen, bevor Sie einreichen
 
-## API Documentation
+## API Dokumentation
 
-API documentation is available at `/api/docs` when running the development server.
+Die API-Dokumentation ist unter `/api/docs` verfügbar, wenn der Entwicklungsserver läuft.
 
-## Deployment
+## Bereitstellung
 
-### Using Docker
+### Mit Docker
 
 ```bash
 docker build -t node-app .
 docker run -p 3000:3000 node-app
 ```
 
-### Using PM2
+### Mit PM2
 
 ```bash
 npm install -g pm2
 pm2 start ecosystem.config.js
 ```
 
-## Troubleshooting
+## Fehlerbehebung
 
-### Common Issues
+### Häufige Probleme
 
-**Port already in use:**
+**Port bereits in Verwendung:**
 ```bash
 lsof -ti:3000 | xargs kill -9
 ```
 
-**Node modules issues:**
+**Node Modules Probleme:**
 ```bash
 rm -rf node_modules package-lock.json
 npm install
 ```
 
-## License
+## Lizenz
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe die [LICENSE](LICENSE) Datei für Details.
 
-## Support
+## Unterstützung
 
-If you encounter any issues or have questions, please:
+Wenn Sie auf Probleme stoßen oder Fragen haben, bitte:
 
-1. Check the [documentation](docs/)
-2. Search existing [issues](../../issues)
-3. Create a new issue if needed
+1. Prüfen Sie die [Dokumentation](docs/)
+2. Durchsuchen Sie bestehende [Issues](../../issues)
+3. Erstellen Sie bei Bedarf ein neues Issue
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes.
+Siehe [CHANGELOG.md](CHANGELOG.md) für eine detaillierte Historie der Änderungen.
 
 ---
 
-Made with ❤️ by the development team
+Mit ❤️ vom Entwicklungsteam erstellt
