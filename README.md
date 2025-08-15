@@ -1,4 +1,4 @@
-# node
+# **NODE**
 
 This is a sample Node.js repository. It currently serves as a placeholder and does not contain any functional code beyond the basic project structure and documentation.
 
